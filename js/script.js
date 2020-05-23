@@ -23,27 +23,27 @@ function checkInputs() {
 
 
     if (usernameValue === '') {
-        setErrorFor(username, 'Username cannot be blank')
+        setErrorFor(username, 'Username can\'t be blank')
     } else {
         setSuccessFor(username)
     }
     if (emailValue === '') {
-        setErrorFor(email, 'Email cannot be blank')
+        setErrorFor(email, 'Email can\'t be blank')
     } else if (!isEmail(emailValue)) {
-        setErrorFor(email, 'Email is not valid')
+        setErrorFor(email, 'Email isn\'t valid')
     }
     else {
         setSuccessFor(email)
     }
     if (passwordValue === '') {
-        setErrorFor(password, 'Password cannot be blank')
+        setErrorFor(password, 'Password can\'t be blank')
     } else {
         setSuccessFor(password)
     }
     if (password2Value === '') {
-        setErrorFor(password2, 'Password check cannot be blank')
+        setErrorFor(password2, 'Password check can\'t be blank')
     } else if (passwordValue !== password2Value) {
-        setErrorFor(password2, 'Passwords does not match')
+        setErrorFor(password2, 'Passwords doesn\'t match')
     } else {
         setSuccessFor(password2)
     }
